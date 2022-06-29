@@ -11,7 +11,7 @@ result:
 fix: |
   [source,bash]
   ----
-  /usr/bin/sed -i.bak 's/^expire-after.*/expire-after:60d or 1G/' /etc/security/audit_control; /usr/sbin/audit -s
+  /usr/bin/sed -i.bak 's/^expire-after.*/expire-after:60d OR 1G/' /etc/security/audit_control; /usr/sbin/audit -s
   ----
 references:
   cce:
